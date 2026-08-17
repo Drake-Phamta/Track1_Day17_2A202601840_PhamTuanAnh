@@ -12,7 +12,7 @@
 **Consent & bản ghi:**
 
 - Người được phỏng vấn đã đồng ý cho ghi lại:  **Có**  /  Không
-- Hình thức lưu lại: **bản ghi âm** (`interview/recording.m4a`) + transcript + notes
+- Hình thức lưu lại: **bản ghi âm** (lưu trên Drive nhóm, xem [recording-link.md](recording-link.md)) + transcript + notes
 - Bản ghi chỉ dùng để xem lại, bóc transcript và phục vụ bài học; không chia sẻ công khai.
 
 ---
@@ -57,41 +57,45 @@
 | Situation có thật | Có tình huống vướng note/ghi chú trong bài trên VLearn và đã raise lên | ✅ **Tin hơn** — nhưng chưa có mốc thời gian cụ thể |
 | Pain có ý nghĩa | Chưa đo được: không có thời lượng, không có số lần trong tuần | ⚠️ **Chưa đủ dữ liệu** |
 | Workaround tồn tại | La lên / Discord / nhắn trực tiếp Lab Coach — hành vi thật, kể tự nhiên | ✅ **Tin hơn**, nhưng workaround này nằm ở phía *yêu cầu hỗ trợ*, không phải phía *tự gỡ* như nhóm giả định |
-| Consequence tồn tại | Chỉ có "chưa được giải thích"; không kể được ảnh hưởng tới bài hay tiến độ | ❌ **Chưa có** |
+| Consequence tồn tại | Learner này chỉ nói "chưa được giải thích". Nhưng interview Lab Coach của nhóm bổ sung hậu quả quan sát được: học viên nản sinh hành vi thả bot phá hệ thống, và Coach tốn công đi dò từng bàn | ⚠️ **Có ở phía Coach**, chưa đo được ở phía learner này |
 | Pattern có lặp | "Có một vài lần" — không có mốc, không có tần suất | ❌ **Chưa hỏi được** |
 
 **Điều gì trong buổi này trái với giả thuyết nhóm:**
 
 Cả Pain A lẫn Pain B đều không đứng vững với learner này. Họ **không** thiếu khả năng định vị chỗ vướng — nói được rõ vướng phần nào — và **không** ngại hỏi, thậm chí "la lên". Nút thắt nằm ở phía sau: người đến hỗ trợ **không phụ trách phần nội dung đó**, nên dù đã hỏi vẫn không nhận được câu trả lời dùng được.
 
-Ghép với interview learner thứ hai do thành viên khác trong nhóm thực hiện (Lab Coach quá tải, có lần quên yêu cầu, và phải load lại bối cảnh dự án nên khó hiểu ngay), pattern chung hiện ra: **learner tự lộ diện; cái hỏng nằm ở khâu định tuyến yêu cầu tới đúng người và truyền bối cảnh cho người hỗ trợ.**
+Ghép với interview learner thứ hai (Lab Coach quá tải, có lần quên yêu cầu, phải load lại bối cảnh dự án nên khó hiểu ngay) và interview Lab Coach LC-01 của nhóm, bức tranh đầy đủ hiện ra **hai phân khúc learner hỏng ở hai chỗ khác nhau**:
 
-Điều này chạm thẳng vào giả định nền của solution directive: Support Queue được thiết kế để *phát hiện ai có thể đang cần hỗ trợ*, trong khi evidence nói việc phát hiện không phải chỗ tắc.
+| Phân khúc | Hành vi | Chỗ hỏng |
+| --- | --- | --- |
+| Lên tiếng — cả hai learner được phỏng vấn | Raise ngay qua Discord hoặc gọi trực tiếp | Routing và context: đã hỏi rồi mà vẫn không gỡ được |
+| Im lặng — Coach mô tả | Không giơ tay; Coach phải đi bộ dò từng bàn, nhìn lướt terminal mới phát hiện | Detection: không ai biết họ đang kẹt |
+
+Điều này chạm thẳng vào giả định nền của solution directive. Support Queue được thiết kế để *phát hiện ai có thể đang cần hỗ trợ* — với learner đã lên tiếng thì việc phát hiện không thêm giá trị gì, nhưng với nhóm im lặng thì đó lại đúng là chỗ Coach đang mù. Giá trị lớn nhất vì vậy nằm ở việc **trích xuất ngữ cảnh và định vị điểm nghẽn**, chứ không phải bản thân danh sách xếp hàng.
 
 ---
 
-## Giới hạn của vòng phỏng vấn này
+## Giới hạn của vòng phỏng vấn này và cách đã xử lý
 
-Ghi lại thẳng để vòng sau không lặp lại:
+Năm điểm yếu của buổi phỏng vấn, và việc nhóm đã làm để bù lại:
 
-1. **Chỉ 1 phút 41 giây** — dừng ngay khi vừa chạm tới tín hiệu quan trọng nhất ("phần đó không phải phần đảm nhiệm chính của các anh ấy"), chưa kịp đào.
-2. **Câu mở đầu là câu đóng và có dẫn dắt:** *"bạn có gặp khó khăn trong quá trình học mà bạn không được hỗ trợ kịp thời không?"* — chỉ nhận về "có", chưa mở được câu chuyện; và câu hỏi đã cài sẵn kết luận "không được hỗ trợ kịp thời".
-3. **Có một câu tóm tắt hộ interviewee:** *"Tức là bạn chủ động liên hệ trực tiếp với Lab Coach?"* — họ chỉ đáp "ừ, cũng tương tự vậy", nên không rõ hành vi thật khớp tới đâu.
-4. **Chưa neo vào một sự kiện có mốc thời gian**, nên không kiểm tra được situation và pattern.
-5. **Chưa hỏi consequence** — đây là chỗ thiếu nghiêm trọng nhất, vì nó quyết định pain có đáng giải hay không.
+| # | Giới hạn | Đã xử lý thế nào |
+| --- | --- | --- |
+| 1 | **Chỉ 1 phút 41 giây** — dừng ngay khi vừa chạm tín hiệu quan trọng nhất ở 1:18 ("phần đó không phải phần đảm nhiệm chính của các anh ấy") | Chính tín hiệu này trở thành trục của Pain Hypothesis C, và được hai interview sau đào tiếp |
+| 2 | **Câu mở đầu là câu đóng, cài sẵn kết luận:** *"bạn có gặp khó khăn... mà không được hỗ trợ kịp thời không?"* — 25 giây đầu chỉ thu được "có" | Đã thay bằng story opener neo buổi cụ thể trong guide v2 |
+| 3 | **Tóm tắt hộ interviewee:** *"Tức là bạn chủ động liên hệ trực tiếp với Lab Coach?"* — họ chỉ đáp "ừ, cũng tương tự vậy" | Guide v2 thay bằng probe trung tính "Rồi sau đó thế nào?" |
+| 4 | **Chưa neo vào sự kiện có mốc thời gian**, nên không kiểm tra được situation và pattern | Guide v2 buộc hỏi "hôm đó là bài nào" và "trong tuần qua mấy lần" |
+| 5 | **Chưa hỏi consequence** | Đã bổ sung câu hỏi consequence riêng trong guide v2; hậu quả phía Coach đã thu được qua interview LC-01 |
 
-**Điều cần hỏi ở vòng sau:**
+**Phía instructor/coach** — chỗ trống lớn nhất sau vòng này — đã được nhóm phỏng vấn ở lượt kế tiếp (LC-01), và chính đó là nơi lộ ra cơ chế detection gap.
 
-- "Kể mình nghe lần gần nhất — hôm đó là buổi nào, bạn đang làm phần gì?"
-- "Ai là người đến hỗ trợ bạn? Bạn phải giải thích lại những gì? Họ trả lời thế nào?"
-- "Sau lần đó bạn làm gì với phần chưa gỡ được?"
-- "Lần gần nhất trước đó chuyện tương tự xảy ra là khi nào?"
+**Vòng sau nên đo bằng số:** số lượt follow-up và số phút Coach cần để làm rõ một câu hỏi trước khi fix thật; tần suất yêu cầu rơi vào phần Coach không phụ trách trong một tuần; độ trễ từ lúc learner kẹt tới lúc Coach phát hiện với nhóm không giơ tay.
 
 ---
 
 ## Phụ lục — Transcript đầy đủ
 
-**Thời lượng:** ~1 phút 41 giây · **Bản ghi:** `interview/recording.m4a` (đã xin phép trước khi ghi)
+**Thời lượng:** ~1 phút 41 giây · **Bản ghi:** lưu trên Drive nhóm — xem [recording-link.md](recording-link.md) (đã xin phép trước khi ghi)
 
 > Đã chuẩn hoá nhẹ dấu câu và một số từ nói lặp để dễ đọc, giữ nguyên nội dung và cách diễn đạt.
 

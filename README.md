@@ -100,57 +100,76 @@ Output team tạo ra là **danh sách ưu tiên**; outcome team chỉ có thể 
 
 ### 2.8. Cập nhật sau phỏng vấn — giả thuyết đã bị evidence bác
 
-Toàn bộ phần trên là suy luận **trước** khi phỏng vấn, giữ nguyên để đối chiếu.
+Toàn bộ phần trên là suy luận **trước** khi phỏng vấn, giữ nguyên để đối chiếu. Nhóm đã thực hiện **ba interview: 2 Learner + 1 Lab Coach**, và kết quả bác giả thuyết gốc ở cả hai phía.
 
-Hai interview thật — [interview/notes.md](interview/notes.md) (lượt mình làm interviewer) và một interview learner thứ hai do thành viên khác trong nhóm thực hiện — **đều bác cả Pain A lẫn Pain B**. Learner không im lặng và không ngại hỏi: họ "la lên", nhắn Discord, gọi thẳng Lab Coach, và nói rõ được mình vướng phần nào.
+| Đối tượng | Hành vi thật | Điểm gãy / Pain thật |
+| --- | --- | --- |
+| **Learner 1** *(lượt mình phỏng vấn)* | "Mình sẽ la lên" — lên Discord, nhắn thẳng Lab Coach: *"Anh ơi, em bị vướng phần này, phần này"* | Người tiếp nhận **không phụ trách đúng phần đó** → *"chưa trả lời cho mình thỏa đáng"* |
+| **Learner 2** | Nhắn qua Discord, gọi Lab Coach ngay khi gặp lỗi code | Lab Coach bận hoặc quên yêu cầu; phải **load lại bối cảnh** dự án/bài học nên khó hiểu ngay |
+| **Lab Coach (LC-01)** | Không có cảnh báo tự động; phải **đi bộ dò từng bàn, nhìn lướt terminal**; dùng mic xử lý lỗi chung; hỏi follow-up nhiều bước | Mù thông tin về tiến độ của nhóm im lặng; câu hỏi gửi đến quá dài lan man ("đại hải") khiến Coach tốn thời gian giải mã |
 
-Ba cơ chế hỏng thật, đều nằm ở phía người hỗ trợ:
+**Ba cơ chế hỏng thực tế trong quy trình hỗ trợ:**
 
-1. **Capacity** — Lab Coach ít so với số học viên; có lần yêu cầu bị quên.
-2. **Ownership / routing** — người tiếp nhận không phụ trách phần nội dung được hỏi, nên "chưa trả lời thỏa đáng".
-3. **Context transfer** — người hỗ trợ chưa nắm bối cảnh bài/dự án, learner phải giải thích lại từ đầu.
+1. **Detection & Visibility Gap** — Coach không có công cụ phát hiện tự động, phải đi dò thủ công quanh lớp; học viên không hiểu bài và không được can thiệp kịp thời dẫn đến hành vi tiêu cực (thả bot vào phá hệ thống).
+2. **Context Gap & Routing** — Người hỗ trợ vào cuộc mà không có sẵn bối cảnh (slide nào, terminal lỗi gì, repo nào); học viên diễn đạt câu hỏi dài dòng làm Coach mất nhiều lượt follow-up để hiểu đúng vấn đề.
+3. **Capacity & Ownership** — Số lượng Coach ít; phân công hỗ trợ chưa đúng chuyên môn từng phần bài học dẫn đến yêu cầu bị trôi hoặc trả lời không thỏa đáng.
 
-**Pain Hypothesis C — thay cho A:**
+**Điểm mình rút ra thêm khi ghép ba interview: có hai phân khúc learner, hỏng ở hai chỗ khác nhau.**
 
-> Khi learner vướng một phần nội dung trong hoặc sau buổi học và **đã chủ động nêu qua kênh hỗ trợ**, họ vẫn không gỡ được vì người tiếp nhận không phụ trách đúng phần đó và không có sẵn bối cảnh bài/dự án, dẫn đến câu trả lời không thỏa đáng, phải giải thích lại từ đầu, hoặc yêu cầu bị quên.
+| Phân khúc | Hành vi | Chỗ hỏng | Support Queue có giúp được không? |
+| --- | --- | --- | --- |
+| Learner lên tiếng (cả hai learner được phỏng vấn) | Raise ngay qua Discord hoặc gọi trực tiếp | Routing và context — đã hỏi rồi mà vẫn không gỡ được | **Không** — họ đã tự lộ diện, việc phát hiện không thêm giá trị |
+| Learner im lặng (Coach mô tả) | Không giơ tay; Coach phải đi dò từng bàn mới thấy | Detection — không ai biết họ đang kẹt | **Có** — đây đúng là phân khúc mà việc phát hiện tạo ra giá trị |
 
-**Điều gì sẽ bác Pain C:** learner nói lần nào raise lên cũng được giải đáp trong buổi; hoặc việc chờ và giải thích lại không dẫn tới hậu quả nào đo được.
+Đây là lý do không thể kết luận gọn "phát hiện không phải nút thắt": với người đã lên tiếng thì đúng, nhưng Coach vẫn đang mù với phần còn lại của lớp.
 
-**Hệ quả cho solution directive:** Support Queue được thiết kế để *phát hiện ai có thể đang cần hỗ trợ*, nhưng evidence nói phát hiện không phải chỗ tắc — learner tự lộ diện. Nếu giữ hướng này, giá trị phải dịch sang thành phần (3) của directive — *gói tín hiệu và bối cảnh cho người hỗ trợ* — chứ không phải thành phần (1) *danh sách ai cần hỗ trợ*.
+**Pain Hypothesis C — bản nhóm đã thống nhất:**
 
-**Còn chưa kiểm chứng:** consequence (cả hai interview dừng ở "chưa được giải thích" / "cảm thấy nản"), pattern lặp, và toàn bộ phía instructor/coach — nơi cả ba cơ chế trên thực sự diễn ra.
+> Khi học viên gặp khó khăn trong buổi học (hoặc qua Discord), quy trình hỗ trợ bị tắc nghẽn vì Coach không có tín hiệu nhận diện sớm (phải đi dò từng bàn) và câu hỏi của học viên bị thiếu bối cảnh kỹ thuật (context gap), dẫn đến việc Coach mất nhiều thời gian làm rõ câu hỏi, hỗ trợ sai chuyên môn, hoặc học viên nản lòng sinh ra hành vi phá rối/bỏ dở bài học.
+
+**Điều gì sẽ bác Pain C:** Learner và Coach khẳng định các buổi học đều nắm bắt bối cảnh của nhau ngay lập tức; không có câu hỏi nào bị hiểu sai ngữ cảnh; và Coach không tốn thời gian cho việc đi dò tìm người kẹt bài.
+
+**Hệ quả cho solution directive:** directive ban đầu tập trung vào thành phần *(1) danh sách xếp hàng ai cần hỗ trợ*. Evidence cho thấy giá trị cốt lõi nằm ở thành phần *(2) và (3)*: **tự động trích xuất ngữ cảnh** và **định vị chính xác điểm nghẽn** — để giảm công đi dò bàn của Coach và xoá khoảng cách diễn đạt của Learner. Danh sách xếp hàng chỉ có giá trị với phân khúc im lặng.
+
+**Vòng phỏng vấn tiếp theo nên đo:** số lượt follow-up và số phút Coach cần để làm rõ một câu hỏi trước khi vào fix thật; tần suất yêu cầu rơi vào phần Coach không phụ trách trong một tuần; và độ trễ từ lúc learner kẹt tới lúc Coach phát hiện, với nhóm không giơ tay.
 
 ---
 
 ## 3. Conversation Guide — phiên bản cuối
 
-*Bản đã sửa sau khi phỏng vấn thật ở Chặng 3.*
+*Bản v2 nhóm thống nhất sau ba interview, đã bổ sung nhánh câu hỏi cho Lab Coach.*
 
-**Tiêu chí tuyển người:** Chúng tôi cần nói chuyện với người đã **nêu một vấn đề học tập qua kênh hỗ trợ (Discord, nhắn trực tiếp, gọi Lab Coach)**, trong vòng **7** ngày gần đây — bất kể sau đó có được giải quyết hay không. Mục tiêu bao phủ **2 learner + 1 instructor/coach**.
+**Tiêu chí tuyển người:** người đã **trực tiếp tham gia học/làm bài thực hành, hoặc trực tiếp làm Lab Coach hỗ trợ**, trong vòng **7** ngày gần đây. Mục tiêu bao phủ: **2 Learner + 1 Lab Coach**.
 
-**Recruitment check:** "Trong 7 ngày gần đây, bạn có thể kể tên một buổi cụ thể mà bạn phải nhờ hỗ trợ hoặc tự xoay xở với một phần bài không?"
+**Recruitment check:**
+
+- **Với Learner:** "Trong 7 ngày gần đây, bạn có thể kể tên một buổi lab cụ thể mà bạn gặp lỗi kỹ thuật hoặc phải nhờ Coach trợ giúp không?"
+- **Với Coach:** "Trong các buổi học tuần vừa rồi, anh/chị có trực tiếp đứng lớp hướng dẫn thực hành và giải đáp thắc mắc trên Discord không?"
 
 **Lời mở đầu:**
 
-"Bọn mình đang tìm hiểu cách mọi người xử lý những tình huống khó khăn trong quá trình học và hỗ trợ học. Mình muốn nghe về một lần xảy ra gần đây, các bước bạn đã làm và điều xảy ra sau đó. Không có câu trả lời đúng hay sai; bọn mình không đánh giá bạn và cũng chưa giới thiệu giải pháp nào. Mình sẽ hỏi chủ yếu về việc đã xảy ra, không phải điều bạn nghĩ có thể xảy ra trong tương lai."
+"Bọn mình đang tìm hiểu về trải nghiệm thực tế trong quá trình học thực hành và hỗ trợ giải đáp thắc mắc giữa học viên và đội ngũ Coach. Cuộc trò chuyện này hoàn toàn nhằm mục đích học hỏi quy trình thực tế, không có câu trả lời đúng hay sai và tụi em không đánh giá bất kỳ ai. Bọn mình sẽ chỉ hỏi về những sự kiện cụ thể đã diễn ra trong các buổi học vừa qua."
 
-**Story opener:** "Kể mình nghe về lần gần nhất trong 7 ngày qua bạn bị mắc ở một phần bài và phải nhờ tới ai đó. Hôm đó là buổi nào, bạn đang làm phần gì?"
+**Story opener:**
 
-**Big 3 Questions — learner:**
+- **Learner:** "Kể mình nghe về lần gần nhất trong 7 ngày qua bạn bị mắc ở một đoạn code/slide và phải tìm sự trợ giúp. Hôm đó là bài nào và bạn đã xử lý thế nào?"
+- **Coach:** "Kể em nghe về lần gần nhất trong tuần qua anh/chị trực tiếp đứng lớp hỗ trợ bài lab và phát hiện học viên đang gặp sự cố?"
+
+**Big 3 Questions — Learner:**
 
 | # | Điều cần học | Câu hỏi sẽ dùng |
 | --- | --- | --- |
-| 1 *(đáng sợ)* | Sau khi learner **đã nêu** vấn đề, cái gì làm lần hỗ trợ đó thất bại — sai người phụ trách, thiếu bối cảnh, hay chỉ là chờ lâu? | "Sau khi bạn nêu vấn đề, chuyện gì xảy ra tiếp theo? Ai là người đến hỗ trợ bạn, bạn phải giải thích lại những gì, và họ trả lời thế nào?" |
-| 2 | Hậu quả thật sau một lần hỗ trợ không thỏa đáng | "Sau lần đó bạn làm gì với phần chưa gỡ được? Nó ảnh hưởng thế nào tới bài hoặc buổi học sau?" |
-| 3 | Tần suất và pattern | "Trong tuần vừa rồi chuyện tương tự xảy ra mấy lần? Lần gần nhất trước đó là khi nào và kết thúc ra sao?" |
+| 1 | Ngữ cảnh & tiếp nhận hỗ trợ | "Sau khi bạn nhắn hỏi hoặc gọi Coach, bạn đã phải giải thích những gì để Coach hiểu được phần bạn đang làm? Coach có nắm được ngay bài bạn đang làm không?" |
+| 2 | Hậu quả thật | "Sau lần hỗ trợ chưa thỏa đáng (hoặc phải chờ lâu) đó, bạn đã làm gì tiếp theo? Việc đó ảnh hưởng thế nào đến việc hoàn thành bài tập hôm đó?" |
+| 3 | Pattern & workaround | "Trong tuần qua, trước khi gọi Coach thì bạn đã thử những cách nào khác (hỏi bạn bên cạnh, hỏi AI ngoài)? Tỷ lệ tự gỡ được là bao nhiêu?" |
 
-**Big 3 Questions — instructor/coach:**
+**Big 3 Questions — Lab Coach:**
 
-| # | Câu hỏi sẽ dùng |
-| --- | --- |
-| 1 | "Khi nhận yêu cầu đó, bạn cần biết những gì trước khi trả lời được? Bạn lấy thông tin đó bằng cách nào và mất bao lâu?" |
-| 2 | "Lần đó kết thúc thế nào? Có yêu cầu nào bạn không xử lý được hoặc bị rơi không?" |
-| 3 | "Trong tuần vừa rồi có bao nhiêu yêu cầu rơi vào phần bạn không phụ trách? Bạn xử lý thế nào?" |
+| # | Điều cần học | Câu hỏi sẽ dùng |
+| --- | --- | --- |
+| 1 | Cách phát hiện & độ trễ nhận biết | "Trong buổi học gần nhất, từ lúc học viên gặp sự cố (terminal lỗi, đứng hình) đến khi anh/chị phát hiện ra là mất bao lâu? Anh/chị nhận biết bằng cách nào khi bạn ấy không giơ tay?" |
+| 2 | Xử lý context gap | "Lần gần nhất nhận một câu hỏi dài dòng hoặc thiếu thông tin, anh/chị đã mất bao nhiêu thời gian và làm những bước nào để làm rõ bối cảnh câu hỏi trước khi trả lời?" |
+| 3 | Hành vi khắc phục & xử lý lỗi chung | "Kể lại lần gần nhất có nhiều bạn cùng vướng một lỗi: anh/chị đã làm gì để giải quyết dứt điểm cho cả lớp mà không phải đi đến từng bàn?" |
 
 **Probe bank — chỉ dùng khi cần đào sâu:**
 
@@ -161,28 +180,28 @@ Ba cơ chế hỏng thật, đều nằm ở phía người hỗ trợ:
 - "Bạn đã thử cách nào khác chưa?"
 - "Việc đó kéo theo hậu quả gì?"
 - "Lần gần nhất trước đó là khi nào?"
-- "Người đến hỗ trợ bạn có nắm được bài/dự án bạn đang làm không? Bạn phải kể lại từ đâu?"
-- "Có lần nào bạn nêu rồi mà không ai quay lại không? Lúc đó bạn làm gì?"
-- "Bạn chờ khoảng bao lâu? Trong lúc chờ bạn làm gì?"
+- "Lúc học viên không hiểu bài và bắt đầu có hành vi thả bot phá hệ thống, anh/chị đã xử lý tình huống đó thế nào?"
+- "Khi học viên hỏi câu hỏi 'đại hải', anh/chị phải hỏi follow-up bao nhiêu câu thì mới chốt được vấn đề?"
+- "Có bao giờ anh/chị đến hỗ trợ nhưng nhận ra nội dung bài đó không thuộc phần chuyên môn chính của mình không? Lúc đó anh/chị xử lý ra sao?"
 
 **Ba phản xạ khi data lệch:**
 
 | User đưa ra | Phản xạ | Cách quay lại evidence |
 | --- | --- | --- |
-| Lời khen | Deflect | "Cảm ơn bạn. Mình muốn quay lại lần gần nhất: lúc đó bạn đã làm gì cụ thể?" |
-| Câu chung chung hoặc lời hứa tương lai | Anchor | "Lần gần nhất chuyện đó thực sự xảy ra là khi nào? Bạn đã xử lý thế nào lúc đó?" |
-| Ý tưởng hoặc feature request | Dig | "Điều đó giúp bạn làm được gì? Trước đây, ở lần gần nhất, bạn đã xử lý việc đó ra sao?" |
+| Lời khen | Deflect | "Dạ vâng, vậy trong buổi học gần nhất chuyện đó diễn ra cụ thể thế nào ạ?" |
+| Câu chung chung hoặc lời hứa tương lai | Anchor | "Lần gần nhất chuyện đó xảy ra là khi nào ạ? Lúc đó anh/chị đã xử lý ra sao?" |
+| Ý tưởng hoặc feature request | Dig | "Điều đó giúp anh/chị giải quyết được khó khăn gì cụ thể? Hiện tại khi chưa có nó thì anh/chị đang xử lý bằng cách nào?" |
 
-**Đã sửa gì so với bản trước khi luyện:**
+**Đã sửa gì so với bản trước khi luyện** *(trích nguyên câu cũ từ buổi phỏng vấn của mình)*:
 
 | Câu cũ | Vấn đề gặp phải khi hỏi thật | Câu mới |
 | --- | --- | --- |
-| "Gần đây nhất, bạn có gặp khó khăn trong quá trình học mà bạn không được hỗ trợ kịp thời không?" | Câu đóng, lại cài sẵn kết luận "không được hỗ trợ kịp thời"; 25 giây đầu chỉ thu được "có" | "Kể mình nghe về lần gần nhất trong 7 ngày qua bạn bị mắc ở một phần bài và phải nhờ tới ai đó. Hôm đó là buổi nào?" |
+| "Gần đây nhất, bạn có gặp khó khăn trong quá trình học mà bạn không được hỗ trợ kịp thời không?" | Câu đóng, lại cài sẵn kết luận "không được hỗ trợ kịp thời"; 25 giây đầu chỉ thu được "có" | "Kể mình nghe về lần gần nhất trong 7 ngày qua bạn bị mắc ở một đoạn code/slide và phải tìm sự trợ giúp. Hôm đó là bài nào?" |
 | "Tức là bạn chủ động liên hệ trực tiếp với Lab Coach?" | Tóm tắt hộ interviewee; họ chỉ đáp "cũng tương tự vậy" nên không rõ hành vi thật khớp tới đâu | "Rồi sau đó thế nào?" |
-| *(không có câu nào đào phía người hỗ trợ)* | Tín hiệu mạnh nhất — người đến hỗ trợ không phụ trách phần đó — xuất hiện ở 1:18 rồi bị bỏ trôi | "Ai là người đến hỗ trợ bạn? Bạn phải giải thích lại những gì, và họ trả lời thế nào?" |
-| Câu hỏi ảnh hưởng gộp chung chung | Cả hai interview đều dừng ở "chưa được giải thích" / "cảm thấy nản", không có hậu quả đo được | "Sau lần đó bạn làm gì với phần chưa gỡ được?" |
+| *(không có câu nào đào phía người hỗ trợ)* | Tín hiệu mạnh nhất — người đến hỗ trợ không phụ trách phần đó — xuất hiện ở 1:18 rồi bị bỏ trôi | "Bạn đã phải giải thích những gì để Coach hiểu được phần bạn đang làm? Coach có nắm được ngay không?" |
+| Câu hỏi ảnh hưởng gộp chung chung | Cả ba interview ban đầu đều dừng ở "chưa được giải thích" / "cảm thấy nản" | "Sau lần đó bạn đã làm gì tiếp theo? Việc đó ảnh hưởng thế nào đến việc hoàn thành bài tập hôm đó?" |
 
-Ngoài bốn câu trên, **trọng tâm Big 3 cũng đổi**: guide cũ xây trên giả định learner không nêu được vấn đề; cả hai learner đều nêu ngay, nên câu hỏi có giá trị bây giờ nằm ở *sau khi đã hỏi*.
+Ngoài bốn câu trên, **trọng tâm Big 3 đổi hẳn** và guide có thêm nhánh riêng cho Lab Coach — vì evidence cho thấy phần lớn nút thắt nằm ở phía người hỗ trợ, chỗ mà guide bản đầu không hề chạm tới.
 
 ---
 
@@ -198,7 +217,7 @@ Ngoài bốn câu trên, **trọng tâm Big 3 cũng đổi**: guide cũ xây tr�
 
 3. **Sau khi luyện, nhóm đã sửa Conversation Guide ở đâu và vì sao?**
 
-   Bốn câu ở bảng cuối phần 3, và quan trọng hơn là đổi cả trọng tâm Big 3. Guide cũ xây trên giả định learner không nêu được vấn đề (không định vị được chỗ hổng, hoặc ngại hỏi). Cả hai learner được phỏng vấn đều nêu ngay và nêu to, nên hai nhánh đó hết giá trị phân biệt. Big 3 mới hỏi vào chỗ thật sự hỏng: sau khi learner đã nêu, cái gì làm lần hỗ trợ đó thất bại.
+   Bốn câu ở bảng cuối phần 3, và hai thay đổi lớn hơn. Thứ nhất, **trọng tâm Big 3 đổi**: guide cũ xây trên giả định learner không nêu được vấn đề, nhưng cả hai learner đều nêu ngay và nêu to, nên nhánh đó hết giá trị phân biệt. Thứ hai, sau interview Lab Coach, nhóm **thêm hẳn một bộ câu hỏi cho phía người hỗ trợ** — hỏi về độ trễ phát hiện, số lượt follow-up để làm rõ câu hỏi, và cách xử lý lỗi chung mà không phải đi từng bàn. Đây là phần guide bản đầu không có, mà lại là nơi chứa nút thắt thật.
 
 ---
 
@@ -206,11 +225,15 @@ Ngoài bốn câu trên, **trọng tâm Big 3 cũng đổi**: guide cũ xây tr�
 
 **Cách mình dùng AI:**
 
-Mình chọn Case C, chốt hướng đi, quyết định cấu trúc bài và duyệt từng phần trước khi đưa vào. AI đóng vai công cụ: dựng khung bốn chặng theo cấu trúc BTC, soạn bản nháp cho capability trung tính, chuỗi Change, hai nhánh Pain và Evidence Map ở Chặng 1; sau khi có transcript thì tổng hợp evidence từ hai interview thành Conversation Guide phiên bản cuối.
+Mình chọn Case C, chốt hướng đi, quyết định cấu trúc bài và duyệt từng phần trước khi đưa vào. AI đóng vai công cụ: dựng khung bốn chặng theo cấu trúc BTC, soạn bản nháp cho capability trung tính, chuỗi Change, hai nhánh Pain và Evidence Map ở Chặng 1; sau khi có transcript thì tổng hợp evidence và đối chiếu bài của mình với bản tổng hợp của nhóm.
 
 **Điểm nào AI làm sai hoặc hời hợt:**
 
-Trước khi có dữ liệu thật, AI dựng một Interview Record mô phỏng — đó là kịch bản, không phải evidence, và đã bị thay hoàn toàn bằng transcript thật. Ở Chặng 1, cả hai nhánh Pain mà AI soạn (không định vị được chỗ hổng / ngại hỏi) đều bị phỏng vấn thật bác bỏ — suy luận trên bàn giấy không thay được việc đi hỏi người thật.
+Ba lần AI đi sai và mình phải sửa lại:
+
+1. Trước khi có dữ liệu thật, AI dựng một Interview Record mô phỏng — đó là kịch bản, không phải evidence, và đã bị thay hoàn toàn bằng transcript thật.
+2. Ở Chặng 1, cả hai nhánh Pain AI soạn (không định vị được chỗ hổng / ngại hỏi) đều bị phỏng vấn thật bác bỏ. Suy luận trên bàn giấy không thay được việc đi hỏi người thật.
+3. Sau hai interview learner, AI kết luận gọn "phát hiện không phải nút thắt vì learner tự lộ diện". Interview Lab Coach của nhóm bác lại kết luận đó: Coach vẫn mù với nhóm im lặng và phải đi dò từng bàn. Kết luận đúng phải tách thành hai phân khúc learner, và đó là phần mình sửa khi ghép bài của mình với bản nhóm trưởng.
 
 **Mình đã tự sửa thế nào:**
 
@@ -222,10 +245,11 @@ Trước khi có dữ liệu thật, AI dựng một Interview Record mô phỏn
 
 ## Ghi chú về bản ghi phỏng vấn
 
-[interview/notes.md](interview/notes.md) chứa Interview Record của chính lượt mình làm interviewer, kèm transcript đầy đủ ở cuối file.
+[interview/notes.md](interview/notes.md) chứa Interview Record của chính lượt mình làm interviewer, kèm transcript đầy đủ ở phụ lục cuối file.
 
 - Người được phỏng vấn đã đồng ý cho ghi lại: **Có** — đã xin phép trước khi bắt đầu ghi.
-- Bản ghi: `interview/recording.m4a` (~1 phút 41 giây), chỉ dùng để xem lại, bóc transcript và phục vụ bài học; không chia sẻ công khai.
+- Bản ghi (~1 phút 41 giây) lưu trên Drive của nhóm: [interview/recording-link.md](interview/recording-link.md).
+- Bản ghi chỉ dùng để xem lại, bóc transcript và phục vụ bài học; không chia sẻ công khai.
 
 ---
 
@@ -236,7 +260,7 @@ Track1_Day17_2A202601840_PhamTuanAnh/
 ├── README.md
 └── interview/
     ├── notes.md
-    └── recording.m4a
+    └── recording-link.md
 ```
 
 ---
