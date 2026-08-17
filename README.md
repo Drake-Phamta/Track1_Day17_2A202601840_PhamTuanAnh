@@ -10,7 +10,7 @@ Bài nộp Track 1 · Day 17 — Problem Hypothesis & User Interview · **Case C
 | --- | --- |
 | MHV | 2A202601840 |
 | Họ tên | Phạm Tuấn Anh |
-| Tên nhóm | *(điền)* |
+| Tên nhóm | Nhóm không đặt tên riêng |
 | Thành viên | Nguyễn Ngọc Chi<br>Nguyễn Minh Hiếu<br>Phạm Tuấn Anh |
 | Case đã chọn | **Case C — AI Support Radar** |
 

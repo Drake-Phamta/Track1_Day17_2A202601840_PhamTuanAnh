@@ -12,4 +12,4 @@ Bản ghi nằm trong thư mục `Track1_Day17_2A202601840_PhamTuanAnh`.
 
 **Transcript:** đã bóc và lưu ở phụ lục cuối [notes.md](notes.md).
 
-> Lưu ý quyền truy cập: link để chế độ chia sẻ cho giảng viên/TA xem được, không để công khai.
+**Quyền truy cập:** đặt ở chế độ chia sẻ cho giảng viên/TA xem được, **không để công khai** — đúng phạm vi mà người được phỏng vấn đã đồng ý.
