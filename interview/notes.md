@@ -3,7 +3,7 @@
 > Bản ghi chép của **chính lượt mình làm interviewer** (Chặng 3).
 > Transcript đầy đủ ở [phụ lục cuối file](#phụ-lục--transcript-đầy-đủ).
 
-**Mã người tham gia:** ............  ·  **Đúng tiêu chí tuyển:**  **Có**  /  Không
+**Mã người tham gia:** L-01  ·  **Đúng tiêu chí tuyển:**  **Có**  /  Không
 
 **Vai của người tham gia:** **learner** (đang học trên VLearn, có buổi lab với Lab Coach)
 
