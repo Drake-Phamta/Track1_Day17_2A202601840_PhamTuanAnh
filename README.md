@@ -257,7 +257,7 @@ Bốn chỗ mình can thiệp và bác lại output của AI:
 
 - Người được phỏng vấn đã đồng ý cho ghi lại: **Có** — đã xin phép trước khi bắt đầu ghi.
 - Bản ghi (~1 phút 41 giây) lưu trên Drive của nhóm: [interview/recording-link.md](interview/recording-link.md).
-- Bản ghi chỉ dùng để xem lại, bóc transcript và phục vụ bài học; không chia sẻ công khai.
+- Bản ghi được dùng để xem lại, bóc transcript và phục vụ bài học — đúng mục đích đã nói khi xin phép.
 
 ---
 

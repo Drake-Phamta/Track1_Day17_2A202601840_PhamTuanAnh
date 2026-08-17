@@ -13,7 +13,7 @@
 
 - Người được phỏng vấn đã đồng ý cho ghi lại:  **Có**  /  Không
 - Hình thức lưu lại: **bản ghi âm** (lưu trên Drive nhóm, xem [recording-link.md](recording-link.md)) + transcript + notes
-- Bản ghi chỉ dùng để xem lại, bóc transcript và phục vụ bài học; không chia sẻ công khai.
+- Bản ghi được dùng để xem lại, bóc transcript và phục vụ bài học — đúng mục đích đã nói khi xin phép.
 
 ---
 
