@@ -1,22 +1,24 @@
 # Track1_Day17_2A202601840_PhamTuanAnh
 
-Bài nộp Track 1 · Day 17 — Problem Hypothesis & User Interview.
+Bài nộp Track 1 · Day 17 — Problem Hypothesis & User Interview · **Case C — AI Support Radar**
 
 ---
 
 ## 1. Thông tin cá nhân và nhóm
 
-| Mục            | Nội dung                                                      |
-| --------------- | -------------------------------------------------------------- |
-| MHV             | 2A202601840                                                    |
-| Họ tên        | Phạm Tuấn Anh                                                |
-| Tên nhóm      | *(điền)*                                                   |
-| Thành viên    | Nguyễn Ngọc Chi<br />Nguyễn Minh Hiếu<br />Phạm Tuấn Anh |
-| Case đã chọn | **Case C — AI Support Radar**                           |
+| Mục | Nội dung |
+| --- | --- |
+| MHV | 2A202601840 |
+| Họ tên | Phạm Tuấn Anh |
+| Tên nhóm | *(điền)* |
+| Thành viên | Nguyễn Ngọc Chi<br>Nguyễn Minh Hiếu<br>Phạm Tuấn Anh |
+| Case đã chọn | **Case C — AI Support Radar** |
 
 ---
 
 ## 2. Problem Hypothesis Brief
+
+### 2.1. Solution — gỡ khỏi hình thức cụ thể
 
 **Solution directive (nguyên văn):**
 
@@ -26,7 +28,7 @@ Sau mỗi phiên học, hệ thống phân tích các tín hiệu như di chuy�
 
 > Sau mỗi phiên học, biến những dấu hiệu vướng mắc rải rác của người học thành một danh sách ưu tiên có thể hành động — ai nên được hỏi thăm, về phần nội dung nào, dựa trên căn cứ gì.
 
-**Chuỗi thay đổi được kỳ vọng:**
+### 2.2. Change — chuỗi thay đổi được kỳ vọng
 
 ```
 Solution → Người phụ trách lớp nhìn thấy dấu hiệu vướng mắc mà trước đây không thấy
@@ -34,15 +36,25 @@ Solution → Người phụ trách lớp nhìn thấy dấu hiệu vướng mắ
         → Outcome
 ```
 
-Output team tạo ra là danh sách ưu tiên; outcome team chỉ có thể ảnh hưởng là việc học viên thực sự gỡ được chỗ vướng. Giữa hai cái có hai hành vi người khác phải làm — người phụ trách lớp phải mở danh sách và liên hệ, học viên phải phản hồi.
+1. Người phụ trách lớp biết ai đang vướng ở phần nào mà không phải chờ học viên tự lên tiếng.
+2. Việc hỗ trợ chuyển từ "ai hỏi thì trả lời" sang chủ động, có thứ tự ưu tiên.
+3. Học viên vướng nhưng im lặng được tiếp cận trong vài ngày, thay vì tự xoay xở hoặc bỏ qua.
 
-**Actor được chọn để điều tra trước:** Learner
+Output team tạo ra là **danh sách ưu tiên**; outcome team chỉ có thể ảnh hưởng là **học viên thực sự gỡ được chỗ vướng**. Giữa hai cái có hai hành vi người khác phải làm: người phụ trách lớp phải mở danh sách và liên hệ, học viên phải phản hồi. Nếu hai hành vi đó không xảy ra, danh sách vẫn được sinh ra nhưng không tạo được outcome nào.
 
-**Vì sao chọn actor này:** người *nhận* feature là instructor, nhưng người *sở hữu pain gốc* là learner. Toàn bộ chuỗi thay đổi sụp nếu learner thực ra tự gỡ được trong vài phút, hoặc không phản hồi khi được liên hệ — đây là mắt xích rủi ro cao nhất và cũng là chỗ giả thuyết dễ bị bác bỏ nhất.
+### 2.3. Actor
+
+| Actor | Họ đang làm gì? | Pain hoặc hậu quả có thể có | Họ hưởng lợi thế nào? |
+| --- | --- | --- | --- |
+| Learner | Sau buổi học ngồi làm bài tập, xem lại slide, hỏi AI Chat | Vướng nhưng không gọi tên được chỗ vướng; tự xoay xở rồi làm qua loa, lỗ hổng trôi sang buổi sau | Được hỏi thăm đúng lúc, đúng phần nội dung |
+| Instructor | Chấm bài, soạn buổi sau, trả lời tin nhắn rải rác | Không biết ai đang đuối cho tới khi có người nộp trễ hoặc vắng học | Có danh sách ưu tiên thay vì phán đoán cảm tính |
+| Coach / TA | Hỗ trợ 1-1 theo người chủ động nhắn tin | Thời gian bị phân bổ theo người lên tiếng to nhất; người im lặng bị bỏ sót | Biết nên chủ động tìm ai trước |
+
+**Actor chọn để điều tra trước: Learner.** Người *nhận* feature là instructor, nhưng người *sở hữu pain gốc* là learner. Toàn bộ chuỗi thay đổi sụp nếu learner thực ra tự gỡ được, hoặc không phản hồi khi được liên hệ — đây là mắt xích rủi ro cao nhất và cũng là chỗ giả thuyết dễ bị bác bỏ nhất.
 
 > ⚠️ Vòng này chỉ có learner-side evidence; instructor-side job chưa được kiểm chứng.
 
-**Situation & Job:**
+### 2.4. Situation & Job
 
 > Khi **vừa kết thúc một buổi học và ngồi làm bài tập vào buổi tối**, **learner** đang cố **hiểu lại phần nội dung mình không theo kịp** bằng cách **tự xem lại slide, tua recording và hỏi AI Chat**.
 
@@ -50,39 +62,47 @@ Output team tạo ra là danh sách ưu tiên; outcome team chỉ có thể ản
 
 > Khi **tôi phát hiện mình không theo kịp một phần nội dung sau buổi học**, tôi muốn **gỡ được chỗ hổng đó trước buổi kế tiếp**, để có thể **làm được bài tập và không bị trôi xa hơn**.
 
-**Pain Hypothesis A** *(nhóm chọn)*:
+### 2.5. Pain — hai cách giải thích cạnh tranh
+
+**Pain Hypothesis A** *(nhóm chọn điều tra trước)*:
 
 > Khi ngồi làm bài tập sau buổi học, learner gặp khó khăn trong việc gỡ phần nội dung mình không theo kịp vì **không định vị được chính xác mình hổng ở đâu để đặt câu hỏi**, dẫn đến tua lại slide và hỏi AI Chat nhiều lượt vẫn không trúng, cuối cùng làm qua loa phần đó hoặc bỏ trống.
 
-**Pain Hypothesis B** *(cách giải thích cạnh tranh)*:
+**Pain Hypothesis B** *(cạnh tranh)*:
 
 > Khi ngồi làm bài tập sau buổi học, learner gặp khó khăn trong việc gỡ phần nội dung mình không theo kịp vì **hỏi người khác tốn chi phí xã hội và thời gian chờ** (ngại làm phiền, sợ bị đánh giá, không biết hỏi lúc nào), dẫn đến họ chọn tự xoay xở hoặc chấp nhận hiểu lơ mơ rồi đi tiếp.
 
-**Giả thuyết nhóm chọn: A** — lý do: A là giả định nền mà directive đang đứng lên; danh sách ưu tiên chỉ có giá trị nếu chỗ vướng *phải* được người ngoài chỉ ra. Nếu B mới đúng thì chỉ đúng chỗ vướng cũng không đổi được gì. A cũng dễ bị bác bỏ hơn chỉ bằng một câu chuyện cụ thể.
+**Lý do chọn A:** A là giả định nền mà directive đang đứng lên — danh sách ưu tiên chỉ có giá trị nếu chỗ vướng *phải* được người ngoài chỉ ra. Nếu B mới đúng thì chỉ đúng chỗ vướng cũng không đổi được gì. A cũng dễ bị bác bỏ hơn chỉ bằng một câu chuyện cụ thể.
 
-**Điều gì phải đúng để giả thuyết đứng vững:**
+### 2.6. Evidence Map
 
-1. Learner thực sự có vướng mắc mà tự họ không nêu ra được thành câu hỏi.
-2. Chỗ vướng đó nhận ra được từ bên ngoài, không chỉ nằm trong đầu learner.
-3. Được chỉ đúng chỗ vướng sẽ làm learner hành động khác đi, chứ không chỉ "biết thêm".
+| Cần kiểm tra | Evidence làm nhóm tin hơn | Evidence làm nhóm nghi ngờ hoặc bác bỏ |
+| --- | --- | --- |
+| Situation có thật | Kể được một buổi cụ thể trong 7 ngày gần đây: hôm nào, nội dung gì, ngồi làm lúc mấy giờ | Chỉ nói "thỉnh thoảng cũng có", không nhớ nổi lần nào |
+| Pain có ý nghĩa | Bỏ ra trên 30 phút mà vẫn không gỡ được, phải hoãn hoặc bỏ dở | Vài phút là qua; "buổi sau tự khắc hiểu" |
+| Workaround tồn tại | Kể được chuỗi: mở lại slide → tua recording → hỏi AI Chat → nhắn bạn | Không làm gì cả, chờ tới buổi sau |
+| Consequence tồn tại | Nộp trễ, bỏ trống một phần, làm theo mẫu mà không hiểu, ảnh hưởng buổi sau | Vẫn nộp bài bình thường, không kể được hậu quả nào |
+| Pattern có lặp | Kể được lần trước đó và khoảng cách thời gian giữa hai lần | Chỉ đúng một lần, do lý do bất thường |
 
-**Điều gì có thể khiến nhóm sửa hoặc bác bỏ giả thuyết:**
+**Điều gì phải đúng để giả thuyết đứng vững:** (1) learner có vướng mắc mà tự họ không nêu ra được thành câu hỏi; (2) chỗ vướng nhận ra được từ bên ngoài; (3) được chỉ đúng chỗ vướng sẽ làm learner hành động khác đi.
 
-Learner tự gỡ được trong dưới 10 phút bằng AI Chat hoặc bạn học; hoặc họ biết rõ mình hổng chỗ nào nhưng vẫn không hỏi (→ nghiêng về Pain B); hoặc không kể được hậu quả nào và tình huống không lặp lại.
+**Điều gì có thể khiến sửa hoặc bác bỏ:** learner tự gỡ trong dưới 10 phút; hoặc họ biết rõ mình hổng chỗ nào nhưng vẫn không hỏi; hoặc không kể được hậu quả nào.
 
-**Solution Parking Lot:**
+### 2.7. Solution Parking Lot
 
-| # | Hướng giải quyết có thể có                                                                             | AI / Không sử dụng AI |
-| - | ------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| 1 | Danh sách ưu tiên tự sinh sau mỗi buổi từ tín hiệu học tập (chính directive)                      | AI                       |
-| 2 | Ô "chỗ mình chưa chắc" cuối mỗi buổi, learner tự đánh dấu, tổng hợp thành danh sách           | Không sử dụng AI      |
-| 3 | 10 phút mở đầu buổi sau đi qua 3 chỗ được đánh dấu nhiều nhất, không nêu tên ai             | Không sử dụng AI      |
-| 4 | Cặp bạn học check-in nhau sau mỗi buổi theo một checklist cố định 3 câu                             | Không sử dụng AI      |
-| 5 | Tóm tắt hội thoại AI Chat của learner thành "câu hỏi thật sự bạn muốn hỏi" để họ tự gửi đi | AI                       |
+| # | Hướng giải quyết có thể có | AI / Không sử dụng AI |
+| --- | --- | --- |
+| 1 | Danh sách ưu tiên tự sinh sau mỗi buổi từ tín hiệu học tập (chính directive) | AI |
+| 2 | Ô "chỗ mình chưa chắc" cuối mỗi buổi, learner tự đánh dấu, tổng hợp thành danh sách | Không sử dụng AI |
+| 3 | 10 phút mở đầu buổi sau đi qua 3 chỗ được đánh dấu nhiều nhất, không nêu tên ai | Không sử dụng AI |
+| 4 | Cặp bạn học check-in nhau sau mỗi buổi theo một checklist cố định 3 câu | Không sử dụng AI |
+| 5 | Tóm tắt hội thoại AI Chat của learner thành "câu hỏi thật sự bạn muốn hỏi" để họ tự gửi đi | AI |
 
-### Cập nhật sau phỏng vấn — giả thuyết đã bị evidence bác
+### 2.8. Cập nhật sau phỏng vấn — giả thuyết đã bị evidence bác
 
-Phần trên là suy luận **trước** khi phỏng vấn, giữ nguyên để đối chiếu. Hai interview thật ([interview/notes.md](interview/notes.md) và [group/interview-learner-2.md](group/interview-learner-2.md)) đều bác cả Pain A lẫn Pain B: **learner không im lặng và không ngại hỏi** — họ "la lên", nhắn Discord, gọi thẳng Lab Coach, và nói rõ được mình vướng phần nào.
+Toàn bộ phần trên là suy luận **trước** khi phỏng vấn, giữ nguyên để đối chiếu.
+
+Hai interview thật — [interview/notes.md](interview/notes.md) (lượt mình làm interviewer) và một interview learner thứ hai do thành viên khác trong nhóm thực hiện — **đều bác cả Pain A lẫn Pain B**. Learner không im lặng và không ngại hỏi: họ "la lên", nhắn Discord, gọi thẳng Lab Coach, và nói rõ được mình vướng phần nào.
 
 Ba cơ chế hỏng thật, đều nằm ở phía người hỗ trợ:
 
@@ -104,10 +124,9 @@ Ba cơ chế hỏng thật, đều nằm ở phía người hỗ trợ:
 
 ## 3. Conversation Guide — phiên bản cuối
 
+*Bản đã sửa sau khi phỏng vấn thật ở Chặng 3.*
 
-*Bản đã sửa sau khi phỏng vấn thật ở Chặng 3. Bản đầy đủ để gửi nhóm: [group/chang2-cap-nhat.md](group/chang2-cap-nhat.md)*
-
-**Tiêu chí tuyển người:** Chúng tôi cần nói chuyện với người đã **nêu một vấn đề học tập qua kênh hỗ trợ (Discord, nhắn trực tiếp, gọi Lab Coach)**, trong vòng **7** ngày gần đây — bất kể sau đó có được giải quyết hay không.
+**Tiêu chí tuyển người:** Chúng tôi cần nói chuyện với người đã **nêu một vấn đề học tập qua kênh hỗ trợ (Discord, nhắn trực tiếp, gọi Lab Coach)**, trong vòng **7** ngày gần đây — bất kể sau đó có được giải quyết hay không. Mục tiêu bao phủ **2 learner + 1 instructor/coach**.
 
 **Recruitment check:** "Trong 7 ngày gần đây, bạn có thể kể tên một buổi cụ thể mà bạn phải nhờ hỗ trợ hoặc tự xoay xở với một phần bài không?"
 
@@ -117,15 +136,23 @@ Ba cơ chế hỏng thật, đều nằm ở phía người hỗ trợ:
 
 **Story opener:** "Kể mình nghe về lần gần nhất trong 7 ngày qua bạn bị mắc ở một phần bài và phải nhờ tới ai đó. Hôm đó là buổi nào, bạn đang làm phần gì?"
 
-**Big 3 Questions:**
+**Big 3 Questions — learner:**
 
 | # | Điều cần học | Câu hỏi sẽ dùng |
 | --- | --- | --- |
-| 1 | Sau khi learner **đã nêu** vấn đề, cái gì làm lần hỗ trợ đó thất bại? | "Sau khi bạn nêu vấn đề, chuyện gì xảy ra tiếp theo? Ai là người đến hỗ trợ bạn, bạn phải giải thích lại những gì, và họ trả lời thế nào?" |
+| 1 *(đáng sợ)* | Sau khi learner **đã nêu** vấn đề, cái gì làm lần hỗ trợ đó thất bại — sai người phụ trách, thiếu bối cảnh, hay chỉ là chờ lâu? | "Sau khi bạn nêu vấn đề, chuyện gì xảy ra tiếp theo? Ai là người đến hỗ trợ bạn, bạn phải giải thích lại những gì, và họ trả lời thế nào?" |
 | 2 | Hậu quả thật sau một lần hỗ trợ không thỏa đáng | "Sau lần đó bạn làm gì với phần chưa gỡ được? Nó ảnh hưởng thế nào tới bài hoặc buổi học sau?" |
 | 3 | Tần suất và pattern | "Trong tuần vừa rồi chuyện tương tự xảy ra mấy lần? Lần gần nhất trước đó là khi nào và kết thúc ra sao?" |
 
-**Probe bank:**
+**Big 3 Questions — instructor/coach:**
+
+| # | Câu hỏi sẽ dùng |
+| --- | --- |
+| 1 | "Khi nhận yêu cầu đó, bạn cần biết những gì trước khi trả lời được? Bạn lấy thông tin đó bằng cách nào và mất bao lâu?" |
+| 2 | "Lần đó kết thúc thế nào? Có yêu cầu nào bạn không xử lý được hoặc bị rơi không?" |
+| 3 | "Trong tuần vừa rồi có bao nhiêu yêu cầu rơi vào phần bạn không phụ trách? Bạn xử lý thế nào?" |
+
+**Probe bank — chỉ dùng khi cần đào sâu:**
 
 - "Lúc đó chuyện gì xảy ra tiếp theo?"
 - "Bạn đã làm gì cụ thể?"
@@ -134,9 +161,9 @@ Ba cơ chế hỏng thật, đều nằm ở phía người hỗ trợ:
 - "Bạn đã thử cách nào khác chưa?"
 - "Việc đó kéo theo hậu quả gì?"
 - "Lần gần nhất trước đó là khi nào?"
-- *(mới)* "Người đến hỗ trợ bạn có nắm được bài/dự án bạn đang làm không? Bạn phải kể lại từ đâu?"
-- *(mới)* "Có lần nào bạn nêu rồi mà không ai quay lại không? Lúc đó bạn làm gì?"
-- *(mới)* "Bạn chờ khoảng bao lâu? Trong lúc chờ bạn làm gì?"
+- "Người đến hỗ trợ bạn có nắm được bài/dự án bạn đang làm không? Bạn phải kể lại từ đâu?"
+- "Có lần nào bạn nêu rồi mà không ai quay lại không? Lúc đó bạn làm gì?"
+- "Bạn chờ khoảng bao lâu? Trong lúc chờ bạn làm gì?"
 
 **Ba phản xạ khi data lệch:**
 
@@ -179,7 +206,7 @@ Ngoài bốn câu trên, **trọng tâm Big 3 cũng đổi**: guide cũ xây tr�
 
 **Cách mình dùng AI:**
 
-Mình chọn Case C, chốt hướng đi, quyết định cấu trúc repo và duyệt từng phần trước khi đưa vào bài. AI đóng vai công cụ: dựng khung form bốn chặng theo cấu trúc BTC, soạn bản nháp cho capability trung tính, chuỗi Change, hai nhánh Pain và Evidence Map ở Chặng 1; sau khi có transcript thì tổng hợp evidence từ hai interview thành bản Chặng 2 cập nhật.
+Mình chọn Case C, chốt hướng đi, quyết định cấu trúc bài và duyệt từng phần trước khi đưa vào. AI đóng vai công cụ: dựng khung bốn chặng theo cấu trúc BTC, soạn bản nháp cho capability trung tính, chuỗi Change, hai nhánh Pain và Evidence Map ở Chặng 1; sau khi có transcript thì tổng hợp evidence từ hai interview thành Conversation Guide phiên bản cuối.
 
 **Điểm nào AI làm sai hoặc hời hợt:**
 
@@ -195,10 +222,10 @@ Trước khi có dữ liệu thật, AI dựng một Interview Record mô phỏn
 
 ## Ghi chú về bản ghi phỏng vấn
 
-[interview/notes.md](interview/notes.md) chứa Interview Record của chính lượt mình làm interviewer, [interview/transcript.md](interview/transcript.md) là transcript đã bóc.
+[interview/notes.md](interview/notes.md) chứa Interview Record của chính lượt mình làm interviewer, kèm transcript đầy đủ ở cuối file.
 
 - Người được phỏng vấn đã đồng ý cho ghi lại: **Có** — đã xin phép trước khi bắt đầu ghi.
-- Bản ghi: `interview/recording` (~1 phút 41 giây), chỉ dùng để xem lại, bóc transcript và phục vụ bài học; không chia sẻ công khai.
+- Bản ghi: `interview/recording.m4a` (~1 phút 41 giây), chỉ dùng để xem lại, bóc transcript và phục vụ bài học; không chia sẻ công khai.
 
 ---
 
@@ -207,19 +234,9 @@ Trước khi có dữ liệu thật, AI dựng một Interview Record mô phỏn
 ```
 Track1_Day17_2A202601840_PhamTuanAnh/
 ├── README.md
-├── interview/
-│   ├── notes.md            # Interview Record - lượt mình làm interviewer
-│   ├── transcript.md       # transcript đã bóc
-│   └── recording.m4a       # bản ghi âm (đã consent)
-├── group/                  # tư liệu chung của nhóm
-│   ├── chang2-nhom.md              # Chặng 2 nhóm soạn trước phỏng vấn
-│   ├── chang2-cap-nhat.md          # Chặng 2 bản cập nhật sau evidence
-│   └── interview-learner-2.md      # interview của thành viên khác
-└── worksheets/             # bản làm việc trong lab
-    ├── chang1-problem-hypothesis.md
-    ├── chang2-conversation-guide.md
-    ├── chang3-interview-practice.md
-    └── chang4-reflection.md
+└── interview/
+    ├── notes.md
+    └── recording.m4a
 ```
 
 ---
