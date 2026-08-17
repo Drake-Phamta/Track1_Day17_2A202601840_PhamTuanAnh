@@ -52,7 +52,7 @@ Output team tạo ra là **danh sách ưu tiên**; outcome team chỉ có thể 
 
 **Actor chọn để điều tra trước: Learner.** Người *nhận* feature là instructor, nhưng người *sở hữu pain gốc* là learner. Toàn bộ chuỗi thay đổi sụp nếu learner thực ra tự gỡ được, hoặc không phản hồi khi được liên hệ — đây là mắt xích rủi ro cao nhất và cũng là chỗ giả thuyết dễ bị bác bỏ nhất.
 
-> ⚠️ Vòng này chỉ có learner-side evidence; instructor-side job chưa được kiểm chứng.
+> ⚠️ Ghi nhận tại thời điểm Chặng 1: vòng này chỉ có learner-side evidence; instructor-side job chưa được kiểm chứng. *(Đã được lấp ở vòng sau bằng interview Lab Coach LC-01 — xem mục 2.8.)*
 
 ### 2.4. Situation & Job
 
