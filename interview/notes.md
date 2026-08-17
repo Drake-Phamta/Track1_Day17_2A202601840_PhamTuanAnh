@@ -7,7 +7,7 @@
 
 **Vai của người tham gia:** **learner** (đang học trên VLearn, có buổi lab với Lab Coach)
 
-**Ngày phỏng vấn:** ............  ·  **Thời lượng:** ~1 phút 41 giây
+**Ngày phỏng vấn:** 17/08/2026  ·  **Thời lượng:** ~1 phút 41 giây
 
 **Consent & bản ghi:**
 
