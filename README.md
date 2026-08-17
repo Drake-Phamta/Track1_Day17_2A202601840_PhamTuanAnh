@@ -237,9 +237,17 @@ Ba lần AI đi sai và mình phải sửa lại:
 
 **Mình đã tự sửa thế nào:**
 
-*(Phần này viết bằng chữ của mình — sửa diễn đạt nào, bỏ ý nào của AI, và tự rút ra điều gì sau khi phỏng vấn.)*
+Bốn chỗ mình can thiệp và bác lại output của AI:
 
-................................................................................
+1. **Bỏ toàn bộ Interview Record do AI dựng.** AI đề nghị một buổi phỏng vấn mô phỏng với số liệu tự nghĩ ra để bài trông đầy đủ. Mình không dùng, và thay bằng transcript buổi phỏng vấn thật mình tự thực hiện — kể cả khi buổi đó chỉ dài 1 phút 41 giây và lộ rõ lỗi hỏi của mình.
+
+2. **Không chấp nhận kết luận "phát hiện không phải nút thắt".** Sau hai interview learner, AI chốt gọn như vậy. Khi bản tổng hợp của nhóm trưởng có thêm interview Lab Coach, mình yêu cầu đối chiếu lại và sửa thành hai phân khúc learner — nhóm lên tiếng hỏng ở routing, nhóm im lặng hỏng ở detection. Đây là phần mình thấy bản nhóm cũng chưa tách rõ, nên giữ lại như đóng góp riêng.
+
+3. **Cắt bài từ sáu file xuống đúng cấu trúc BTC.** Bản đầu có `worksheets/` và `group/` với nhiều phiên bản trùng nhau. Mình yêu cầu rút về một phiên bản mới nhất duy nhất, và kéo bảng Actor cùng Evidence Map vào README để không mất mắt xích nào trong chuỗi Solution → Evidence.
+
+4. **Giữ lại phần chỉ ra lỗi của chính mình** trong `interview/notes.md`, dù nó làm bài nhìn kém hoàn hảo hơn. Ba lỗi hỏi — câu mở đóng cài sẵn kết luận, tóm tắt hộ interviewee, và dừng phỏng vấn ngay khi tín hiệu quan trọng nhất vừa xuất hiện — đều là quan sát từ chính transcript của mình, và chính chúng dẫn tới bốn câu sửa trong guide.
+
+**Điều mình rút ra:** giả thuyết viết trên bàn nghe rất hợp lý mà sai hoàn toàn. Cả Pain A lẫn Pain B nhóm dựng đều đổ chỉ sau một câu của người thật: "mình sẽ la lên". Một phút 41 giây phỏng vấn thật có giá trị hơn cả buổi ngồi suy luận.
 
 ---
 
