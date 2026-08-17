@@ -203,3 +203,27 @@ Learner tự gỡ được trong dưới 10 phút bằng AI Chat hoặc bạn h�
 - [x] Nói rõ được điều gì có thể làm giả thuyết được chọn trở nên sai
 - [x] Pain không được viết dưới dạng "thiếu feature X"
 - [x] Parking Lot đủ 5 hướng, có 3 hướng không dùng AI
+
+---
+
+## 📌 Cập nhật sau Chặng 3 — giả thuyết đã bị evidence bác
+
+> Phần trên giữ nguyên là suy luận **trước** khi phỏng vấn. Mục này ghi lại điều đã thay đổi sau khi có evidence, không sửa ngược lên trên.
+
+**Cả Pain A lẫn Pain B đều không đứng vững.** Hai learner được phỏng vấn ([../interview/notes.md](../interview/notes.md) và [../group/interview-learner-2.md](../group/interview-learner-2.md)) đều **chủ động nêu vấn đề ngay** — "la lên", nhắn Discord, gọi Lab Coach. Họ không thiếu khả năng định vị chỗ vướng (A) và không ngại hỏi (B).
+
+**Ba cơ chế hỏng thật, đều nằm ở phía người hỗ trợ:**
+
+1. **Capacity** — Lab Coach ít so với số học viên; có lần yêu cầu bị quên.
+2. **Ownership / routing** — người tiếp nhận không phụ trách phần nội dung được hỏi, nên "chưa trả lời thỏa đáng".
+3. **Context transfer** — người hỗ trợ chưa nắm bối cảnh bài/dự án, learner phải giải thích lại từ đầu.
+
+**Pain Hypothesis C — thay cho A:**
+
+> Khi learner vướng một phần nội dung trong hoặc sau buổi học và **đã chủ động nêu qua kênh hỗ trợ**, họ vẫn không gỡ được vì người tiếp nhận không phụ trách đúng phần đó và không có sẵn bối cảnh bài/dự án, dẫn đến câu trả lời không thỏa đáng, phải giải thích lại từ đầu, hoặc yêu cầu bị quên.
+
+**Điều gì sẽ bác Pain C:** learner nói lần nào raise lên cũng được giải đáp trong buổi; hoặc việc chờ và giải thích lại không dẫn tới hậu quả nào đo được.
+
+**Hệ quả cho solution directive:** Support Queue được thiết kế để *phát hiện ai có thể đang cần hỗ trợ*. Evidence nói phát hiện không phải chỗ tắc — learner tự lộ diện. Nếu giữ hướng này, giá trị phải dịch sang thành phần (3) của directive — *gói tín hiệu và bối cảnh cho người hỗ trợ* — chứ không phải thành phần (1) *danh sách ai cần hỗ trợ*.
+
+**Vẫn chưa kiểm chứng được:** consequence (cả hai interview đều dừng ở "chưa được giải thích" / "cảm thấy nản"), pattern lặp, và toàn bộ phía instructor/coach — nơi cả ba cơ chế trên thực sự diễn ra.

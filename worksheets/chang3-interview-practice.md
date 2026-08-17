@@ -31,11 +31,11 @@
 
 **Kết quả xin phép:**
 
-- Người được phỏng vấn đồng ý cho ghi âm:  Có  /  **Không**
-- Hình thức lưu lại:  Bản ghi audio  /  **Chỉ ghi chép tay (notes)**
-- Nếu không có bản ghi, lý do: bạn được phỏng vấn đồng ý nói chuyện và cho ghi chép, nhưng không thoải mái với việc bị ghi âm. Mình tôn trọng và chỉ ghi chép tay.
+- Người được phỏng vấn đồng ý cho ghi âm:  **Có**  /  Không
+- Hình thức lưu lại:  **Bản ghi audio** + transcript + notes
+- Thời lượng bản ghi: ~1 phút 41 giây
 
-> Vì lý do trên, bài nộp không kèm file audio hoặc recording link. Điều này đã được khai báo ở `interview/notes.md` và README.
+> Bản ghi nằm ở `interview/recording`, transcript đã bóc ở [../interview/transcript.md](../interview/transcript.md).
 
 ---
 
@@ -59,16 +59,17 @@ Dùng Conversation Guide làm **xương sống** nhưng **follow câu chuyện c
 
 **Ghi nhanh trong lúc phỏng vấn:**
 
-- Buổi học tối thứ Tư tuần trước, ngồi làm bài tập ~21h, tới bài thứ hai thì tắc
-- Mở lại slide từ đầu → tua đoạn giữa 2 lần → hỏi AI Chat 4–5 lượt → nhắn bạn cùng nhóm ~22h
-- Chép nguyên câu trong đề vào AI Chat, đổi cách hỏi 3 lần vẫn không trúng
-- Tổng cộng ~40–50 phút rồi bỏ, làm theo bài mẫu buổi trước
-- Có nghĩ tới việc nhắn giảng viên nhưng **không phải vì ngại** — mà vì không biết viết câu hỏi thế nào cho gọn ⚠️ trái giả thuyết
+- Vướng phần note/ghi chú trong bài trên VLearn, không được hỗ trợ kịp thời
+- Không im lặng: "la lên" → lên Discord hoặc nhắn thẳng các anh Lab Coach ngay trong buổi học
+- Nói rõ được vướng phần nào: "Anh ơi, em bị vướng phần này, phần này" ⚠️ **trái giả thuyết** — nhóm giả định learner không định vị được chỗ hổng
+- Đã được Lab Coach tiếp cận, nhưng phần đó không thuộc phần đảm nhiệm chính của họ → chưa trả lời thỏa đáng
+- Xảy ra "một vài lần" — chưa kịp hỏi lần gần nhất trước đó là khi nào
+- Chưa hỏi được hậu quả: phần chưa gỡ được đó rồi ra sao
 
 **Quote nghe được nguyên văn:**
 
-- "Em biết là em không hiểu, nhưng em không biết em không hiểu chỗ nào để hỏi."
-- "Hỏi AI thì nó trả lời đúng mà không dính vào chỗ em kẹt."
+- "Ví dụ như mình không được hỗ trợ kịp thời thì mình sẽ la lên."
+- "Có một vài lần mà mình kiểu như raise lên rồi mình hỏi, nhưng mà các anh ấy kiểu như là... phần đó không phải phần đảm nhiệm chính của các anh ấy."
 
 ---
 
@@ -79,9 +80,13 @@ Dùng Conversation Guide làm **xương sống** nhưng **follow câu chuyện c
 - [x] Đã đánh dấu điều bất ngờ hoặc trái giả thuyết
 - [x] Đã ghi lại câu hỏi nào của mình mở được câu chuyện, câu nào làm hỏng mạch
 
-**Câu hỏi mở được câu chuyện thật:** "Từ lúc bạn nhận ra mình chưa hiểu phần đó cho tới lúc bạn dừng lại, bạn đã làm những gì?" — bạn ấy kể liền một mạch theo đúng thứ tự thời gian.
+**Câu hỏi mở được câu chuyện thật:** *"Thì lúc mà bạn gặp tình huống đấy, bạn có làm gì tiếp theo không? Kiểu để được hỗ trợ ấy."* — đây là câu duy nhất khiến interviewee kể hành vi thật thay vì trả lời có/không: "mình sẽ la lên", "lên Discord, hay là nhắn các anh".
 
-**Câu hỏi làm hỏng mạch / dẫn dắt / hỏi quá chung:** mình lỡ hỏi "nếu có ai đó chỉ đúng chỗ bạn đang kẹt thì có đỡ hơn không?" — đây là mời đánh giá solution, và bạn ấy trả lời "chắc là có" rồi câu chuyện đứng lại. Ngoài ra có hai lần mình lấp im lặng quá nhanh nên cắt mất đoạn bạn ấy đang định kể tiếp.
+**Câu hỏi làm hỏng mạch / dẫn dắt / hỏi quá chung:**
+
+1. Câu mở đầu là câu đóng và cài sẵn kết luận: *"gần đây nhất, bạn có gặp khó khăn trong quá trình học mà bạn không được hỗ trợ kịp thời không?"* → 25 giây đầu chỉ nhận về "có".
+2. Tóm tắt hộ interviewee: *"Tức là bạn chủ động liên hệ trực tiếp với Lab Coach?"* → họ chỉ đáp "ừ, cũng tương tự vậy", mình mất luôn cơ hội nghe họ tự mô tả.
+3. Dừng ở 1:41 ngay sau khi tín hiệu quan trọng nhất vừa xuất hiện ở 1:18 ("phần đó không phải phần đảm nhiệm chính của các anh ấy") — lẽ ra phải đào tiếp vào đúng chỗ đó.
 
 ---
 

@@ -1,3 +1,5 @@
+> **Đây là bản trước khi phỏng vấn**, giữ nguyên để đối chiếu. Bản đã sửa sau khi có evidence nằm ở [../group/chang2-cap-nhat.md](../group/chang2-cap-nhat.md).
+
 # Chặng 2 — Chuẩn bị phỏng vấn · 30 phút
 
 **Mục tiêu:** chuyển Evidence Map thành một Conversation Guide ngắn, đủ để tìm bằng chứng về pain mà **không mời user đánh giá solution**.
